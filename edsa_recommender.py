@@ -104,9 +104,5 @@ def main():
         st.title("Solution Overview")
         st.write("Describe your winning approach on this page")
 
-    # You may want to add more sections here for aspects such as an EDA,
-    # or to provide your business pitch.
 
-
-if __name__ == '__main__':
-    main()
+    
