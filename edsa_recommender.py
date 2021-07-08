@@ -107,55 +107,7 @@ def main():
 ###########################################################################################
 ################################ EDA ######################################################
 ###########################################################################################
-	# Building out the "Company Information, Background & Team" page
-    if page_selection == "Company Information, Background & Team":
-                st.info("Meet the amazing team members that contributed to this project.")
-                # st.markdown("<h1 style='text-align: center;'>Contributors</h1>", unsafe_allow_html=True)
-                # st.markdown("\n\n")
-
-                ### IN ALPHABETICAL ORDER ###
-                # Bulelani
-                st.markdown("<h3 style='text-align: center;'>Bulelani Nkosi</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Streamlit App Coordinator | Data Analyst</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/Bulelani.jpg', width=120)
-                st.markdown("<a href='https://www.linkedin.com/in/bulelanin' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/BNkosi' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
-                # Lizette
-                st.markdown("<h3 style='text-align: center;'>Lizette Loubser</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Notebook Coordinator | ML Engineer</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/Lizette.jpg', width=120)
-                st.markdown("<a href='http://www.linkedin.com/in/lizette-loubser' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/Lizette95' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
-                # Neli
-                st.markdown("<h3 style='text-align: center;'>Nelisiwe Mabanga</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Data Journalist | Analyst</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/nelly.jpeg', width=120)
-                st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
-                # Nolu
-                st.markdown("<h3 style='text-align: center;'>Noluthando Khumalo</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/Thando.jpg', width=120)
-                st.markdown("<a href='https://www.linkedin.com/in/noluthando-khumalo-3870ab191/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/ThandoKhumalo' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
-                # Nompilo
-                st.markdown("<h3 style='text-align: center;'>Nompilo Nhlabathi</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/Nompilo.png', width=120)
-                st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
-                # Sizwe
-                st.markdown("<h3 style='text-align: center;'>Sizwe Bhembe</h3>", unsafe_allow_html=True)
-                st.markdown("<p style='text-align: center;'>Notebook Assistant</p>", unsafe_allow_html=True)
-                st.image('resources/imgs/Sizwe.jpg', width=120)
-                st.markdown("<a href='https://www.linkedin.com/in/sizwe-bhembe-372880101' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-                st.markdown("<a href='https://github.com/sjbhembe' target='_blank'>GitHub</a>", unsafe_allow_html=True)
-
+	 
 #
 
 if __name__ == '__main__':
