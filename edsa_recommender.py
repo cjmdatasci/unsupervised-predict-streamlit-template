@@ -31,7 +31,12 @@ import streamlit as st
 # Data handling dependencies
 import pandas as pd
 import numpy as np
-
+# Logo imports
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import RendererAgg
+from matplotlib.figure import Figure
+_lock = RendererAgg.lock
+import base64
 # Custom Libraries
 from utils.data_loader import load_movie_titles
 from recommenders.collaborative_based import collab_model
@@ -40,12 +45,24 @@ from recommenders.content_based import content_model
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
 
+
 # App declaration
 def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview", "Company Information, Background & Team"]
+
+ ### Loading Company logo
+    row1_space1, center_, row1_space2 = st.beta_columns((.5, 1, .2, ))
+    with center_,_lock :
+
+        file_ = open('resources/imgs/Latest_company_logo.gif', "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
+    
+        page_options = ["Recommender System","Solution Overview", "Company Information, Background & Team"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
