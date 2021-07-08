@@ -132,41 +132,41 @@ def main():
         st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
 
         st.header('Our Mission')		
-        st.write('To use AI to combat climate change within Africa, securing the futures of the generations of now and tomorrow.')
+        st.write('To create ethical AI products and leverage the South African market for the 4th indusrtial revolution')
 
         st.header('Our Vision')
-        st.write('A better and more intelligent Africa which is able to adapt to the fourth industrial revolution by using Data Science, for social good.')
+        st.write('A better and more intelligent South Africa, which is able to adapt to the fourth industrial revolution by using Data Science, for social good.')
 
         st.header('Our Amazing Team')
-        st.write('A team of 6 passionate AI solutionists.')
+        st.write('A team 6 highly skilled and passionate individuals.')
         #First row of pictures
 
         col1, col2,col3 = st.beta_columns(3)
         Ric_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
-        col1.image(Ric_Pic,caption="Siya", width=150)
-        col1.write('Tech-lead and software developer.')
+        col1.image(Ric_Pic,caption="Siyamukela Hadebe", width=150)
+        col1.write('Data Steward & Data Scientist.')
 
         Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
         col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
-        col2.write('Machine learning engineer')
+        col2.write('Project Manager & Data Scientist')
 
         Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
-        col3.image(Cot_Pic,caption="Lelo", width=150)
-        col3.write('Project manager')
+        col3.image(Cot_Pic,caption="Nomvuselelo Simelane", width=150)
+        col3.write('Software Engineer & Data Scientist')
 
         #Second row of pictures
         col4, col5,col6 = st.beta_columns(3)
         vesh_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
-        col4.image(vesh_Pic,caption="Tebogo", width=150)
-        col4.write('UX/UI Designer')
+        col4.image(vesh_Pic,caption="Tebogo Sambo", width=150)
+        col4.write('UX/UI Designer & Data Scientist')
 
         Phiw_Pic =Image.open('resources/imgs/courtney_pic.jpg')
-        col5.image(Phiw_Pic,caption="Kago", width=150)
-        col5.write('Digital marketer ')
+        col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
+        col5.write('Digital Marketer & Data Scientist')
 
         nor_Pic =Image.open('resources/imgs/courtney_pic.jpg')
         col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
-        col6.write('Database architect')
+        col6.write('Database Architect & Data Scientist')
 
 #
 
