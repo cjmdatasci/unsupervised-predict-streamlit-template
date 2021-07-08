@@ -126,46 +126,46 @@ def main():
 ###########################################################################################
 	 	# Building out the "Company Information, Background & Team" page
 
-if page_selection == "Company Information, Background & Team":
-    st.title("Company Information, Background and Team")
-    st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
+    if page_selection == "Company Information, Background & Team":
+        st.title("Company Information, Background and Team")
+        st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
 
-    st.header('Our Mission')		
-    st.write('To use AI to combat climate change within Africa, securing the futures of the generations of now and tomorrow.')
+        st.header('Our Mission')		
+        st.write('To use AI to combat climate change within Africa, securing the futures of the generations of now and tomorrow.')
 
-    st.header('Our Vision')
-    st.write('A better and more intelligent Africa which is able to adapt to the fourth industrial revolution by using Data Science, for social good.')
+        st.header('Our Vision')
+        st.write('A better and more intelligent Africa which is able to adapt to the fourth industrial revolution by using Data Science, for social good.')
 
-    st.header('Our Amazing Team')
-    st.write('A team of 6 passionate AI solutionists.')
-    #First row of pictures
+        st.header('Our Amazing Team')
+        st.write('A team of 6 passionate AI solutionists.')
+        #First row of pictures
 
-    col1, col2,col3 = st.beta_columns(3)
-    Ric_Pic =Image.open('resources/imgs/courtney_pic.png') 
-    col1.image(Ric_Pic,caption="Siya", width=150)
-    col1.write('Tech-lead and software developer.')
-    
-    Cot_Pic =Image.open('resources/imgs/courtney_pic.png') 
-    col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
-    col2.write('Machine learning engineer')
+        col1, col2,col3 = st.beta_columns(3)
+        Ric_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        col1.image(Ric_Pic,caption="Siya", width=150)
+        col1.write('Tech-lead and software developer.')
 
-    Cot_Pic =Image.open('resources/imgs/courtney_pic.png') 
-    col3.image(Cot_Pic,caption="Lelo", width=150)
-    col3.write('Project manager')
+        Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
+        col2.write('Machine learning engineer')
 
-    #Second row of pictures
-    col4, col5,col6 = st.beta_columns(3)
-    vesh_Pic =Image.open('resources/imgs/courtney_pic.png') 
-    col4.image(vesh_Pic,caption="Tebogo", width=150)
-    col4.write('UX/UI Designer')
-    
-    Phiw_Pic =Image.open('resources/imgs/courtney_pic.png')
-    col5.image(Phiw_Pic,caption="Kago", width=150)
-    col5.write('Digital marketer ')
+        Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        col3.image(Cot_Pic,caption="Lelo", width=150)
+        col3.write('Project manager')
 
-    nor_Pic =Image.open('resources/imgs/courtney_pic.png')
-    col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
-    col6.write('Database architect')
+        #Second row of pictures
+        col4, col5,col6 = st.beta_columns(3)
+        vesh_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        col4.image(vesh_Pic,caption="Tebogo", width=150)
+        col4.write('UX/UI Designer')
+
+        Phiw_Pic =Image.open('resources/imgs/courtney_pic.jpg')
+        col5.image(Phiw_Pic,caption="Kago", width=150)
+        col5.write('Digital marketer ')
+
+        nor_Pic =Image.open('resources/imgs/courtney_pic.jpg')
+        col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
+        col6.write('Database architect')
 
 #
 
