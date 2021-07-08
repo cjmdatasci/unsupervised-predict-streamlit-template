@@ -118,10 +118,69 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    if page_selection == "Solution Overview":
-        st.title("Solution Overview")
-        st.write("Describe your winning approach on this page")
+    #Solution Overview Page
+if page_selection == "Solution Overview":
+    overview_options = ["Problem Statement", "Introduction", "Conclusion"]
+    overview_selection = st.selectbox("Please select an option to get an overview of the project", overview_options)
 
+    if overview_selection == "Problem Statement":
+        st.title('Problem Statement')
+        break_h = """
+            <br>
+            <br>
+            """
+        st.markdown(break_h, unsafe_allow_html=True)
+
+        st.write('Accurately predict unseen movie ratings gathered from thousands of users based on their historic preferences. The objective of this App is to construct a recommendation algorithm based on content and collaborative filtering, capable of accurately predicting how a user will rate a movie they have not watched yet based on their historical preference.')
+        
+        break_h = """
+            <br>
+            <br>
+            <br>
+            """
+
+        st.markdown(break_h, unsafe_allow_html=True)
+
+        
+
+    if overview_selection == "Introduction":
+        st.title('Introduction')
+        break_h = """
+            <br>
+            <br>
+            """
+        st.markdown(break_h, unsafe_allow_html=True)
+
+        st.write('Recommender systems are systems that are designed to recommend things to the user based on many different factors. These systems predict the most likely product that the user is most likely to purchase and are of interest. Companies like Netflix and Amazon use recommender systems to help their users to identify the correct product or movies for them. Recommender systems are an important class of machine learning algorithms that offer relevant suggestions to users. The suggested items are as relevant to the user as possible so that the user can engage with those items: YouTube videos, news articles, online products, movie and series recommendation. Items are ranked according to their relevancy, and the most relevant ones are shown to the user. The relevance is determined by the recommender system, mainly based on historical data. For example, If you have recently watched YouTube videos about elephants, then YouTube is going to start showing you many elephant videos with similar titles and themes. Recommender systems are generally divided into two main categories: collaborative filtering and content-based systems. Both users and service providers have benefited from these kinds of systems. Intelligent algorithms can help viewers find great titles from tens of thousands of options. This notebook will construct a recommendation algorithm based on content and collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed based on their historic preferences. Providing an accurate and robust solution will have immense economic potential, with users of the system being exposed to content they would like to view or purchase - generating revenue and platform affinity.')
+        
+        break_h = """
+            <br>
+            <br>
+            <br>
+            """
+
+        st.markdown(break_h, unsafe_allow_html=True)
+
+        
+
+    if overview_selection == "Conclusion":
+        st.title('Conclusion')
+        break_h = """
+            <br>
+            <br>
+            """
+        st.markdown(break_h, unsafe_allow_html=True)
+        
+        st.write("Facebook, YouTube, LinkedIn are among the most used websites on the internet today that use recommender systems. Facebook suggests us to make more friends using the 'People You May Know' section. Similarly, LinkedIn recommends you connect with people you may know, and YouTube suggests relevant videos based on your previous browsing history. All of these are recommender systems in action. While most of the people are aware of these features, only a few know that the algorithms used behind these features are known as 'Recommender Systems'. They 'recommend' personalised content based on user's past / current preference to improve the user experience. We were tasked with accurately predicting unseen movie ratings gathered from thousands of users based on their historic preferences. Broadly, there are two types of recommendation systems: Content-Based and Collaborative filtering based as mention. In the notebook, we observation algorithms of both content-based and collaborative filtering. When we used the linear regression model (content-based) on the test data, it produced an RMSE score of 0.82565. However, the Singular Value Decomposition (collaborative-filtering) performed better on the test data with an RMSE score of 0.80773, which is our final score on the Kaggle leaderboard.")
+        break_h = """
+            <br>
+            <br>
+            <br>
+            """
+
+        st.markdown(break_h, unsafe_allow_html=True)
+
+        
 ###########################################################################################
 ################################ Info Page ######################################################
 ###########################################################################################
@@ -144,29 +203,29 @@ def main():
         col1, col2,col3 = st.beta_columns(3)
         Ric_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
         col1.image(Ric_Pic,caption="Siyamukela Hadebe", width=150)
-        col1.write('Data Steward & Data Scientist.')
+        col1.write('Data Steward')
 
         Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
         col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
-        col2.write('Project Manager & Data Scientist')
+        col2.write('Project Manager')
 
         Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
         col3.image(Cot_Pic,caption="Nomvuselelo Simelane", width=150)
-        col3.write('Software Engineer & Data Scientist')
+        col3.write('Software Engineer')
 
         #Second row of pictures
         col4, col5,col6 = st.beta_columns(3)
         vesh_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
         col4.image(vesh_Pic,caption="Tebogo Sambo", width=150)
-        col4.write('UX/UI Designer & Data Scientist')
+        col4.write('UX/UI Designer')
 
         Phiw_Pic =Image.open('resources/imgs/courtney_pic.jpg')
         col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
-        col5.write('Digital Marketer & Data Scientist')
+        col5.write('Digital Marketer')
 
         nor_Pic =Image.open('resources/imgs/courtney_pic.jpg')
         col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
-        col6.write('Database Architect & Data Scientist')
+        col6.write('Database Architect')
 
 #
 
