@@ -37,6 +37,7 @@ from matplotlib.backends.backend_agg import RendererAgg
 from matplotlib.figure import Figure
 _lock = RendererAgg.lock
 import base64
+from PIL import Image
 # Custom Libraries
 from utils.data_loader import load_movie_titles
 from recommenders.collaborative_based import collab_model
