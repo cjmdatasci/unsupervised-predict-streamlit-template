@@ -214,11 +214,11 @@ def main():
 
         #Second row of pictures
         col4, col5,col6 = st.beta_columns(3)
-        vesh_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        vesh_Pic =Image.open('resources/imgs/TJ_pic.jpg') 
         col4.image(vesh_Pic,caption="Tebogo Sambo", width=150)
         col4.write('UX/UI Designer')
 
-        Phiw_Pic =Image.open('resources/imgs/courtney_pic.jpg')
+        Phiw_Pic =Image.open('resources/imgs/kago_pic.jpg')
         col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
         col5.write('Digital Marketer')
 
