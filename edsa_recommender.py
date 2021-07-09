@@ -57,11 +57,11 @@ def main():
     row1_space1, center_, row1_space2 = st.beta_columns((.5, 1, .2, ))
     with center_,_lock :
 
-        file_ = open('resources/imgs/Latest_company_logo.gif', "rb")
+        file_ = open('resources/imgs/logo.gif', "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
-        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
+        st.markdown(f'<img src="data:image/gif;base64,{data_url},text-align: center;" alt="cat gif">',unsafe_allow_html=True,)
     
         page_options = ["Recommender System","Solution Overview", "Company Information, Background & Team"]
 
