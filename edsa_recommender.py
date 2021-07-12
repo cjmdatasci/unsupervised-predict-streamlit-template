@@ -35,7 +35,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import RendererAgg
 from matplotlib.figure import Figure
-_lock = RendererAgg.lock
+lock = RendererAgg.lock
 import base64
 from PIL import Image
 # Custom Libraries
@@ -53,14 +53,14 @@ def main():
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
 
- ### Loading Company logo
-    row1_space1, center_, row1_space2 = st.beta_columns((.5, 1, .2, ))
-    with center_,_lock :
+### Loading Company logo
+    row1space1, center, row1_space2 = st.beta_columns((.5, 1, .2, ))
+    with center,lock :
 
-        file_ = open('resources/imgs/logo.gif', "rb")
-        contents = file_.read()
+        file = open('resources/imgs/logo.gif', "rb")
+        contents = file.read()
         data_url = base64.b64encode(contents).decode("utf-8")
-        file_.close()
+        file.close()
         st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)	
 
     
