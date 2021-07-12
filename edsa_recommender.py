@@ -121,64 +121,7 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     #Solution Overview Page
     if page_selection == "Solution Overview":
-        overview_options = ["Problem Statement", "Introduction", "Conclusion"]
-        overview_selection = st.selectbox("Please select an option to get an overview of the project", overview_options)
 
-        if overview_selection == "Problem Statement":
-            st.title('Problem Statement')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
-
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-
-        if overview_selection == "Introduction":
-            st.title('Introduction')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
-
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-
-        if overview_selection == "Conclusion":
-            st.title('Conclusion')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
-            
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
-
-            st.markdown(break_h, unsafe_allow_html=True)
 
         
 ###########################################################################################
