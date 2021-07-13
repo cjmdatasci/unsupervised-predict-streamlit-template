@@ -251,28 +251,29 @@ if page_selection == "Company Information":
         #First row of pictures
 
         col1, col2,col3 = st.beta_columns(3)
-        Ric_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        Ric_Pic =Image.open('resources/imgs/resized3.jpeg') 
         col1.image(Ric_Pic,caption="Siyamukela Hadebe", width=150)
         col1.write('Data Steward')
 
-        Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        Cot_Pic =Image.open('resources/imgs/resized5.jpg') 
         col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
         col2.write('Project Manager')
 
-        Cot_Pic =Image.open('resources/imgs/courtney_pic.jpg') 
+        Cot_Pic =Image.open('resources/imgs/resized1.jpeg') 
         col3.image(Cot_Pic,caption="Nomvuselelo Simelane", width=150)
         col3.write('Software Engineer')
 
         #Second row of pictures
         col4, col5,col6 = st.beta_columns(3)
-        vesh_Pic =Image.open('resources/imgs/TJ_pic.jpg') 
+        vesh_Pic =Image.open('resources/imgs/resized2.jpeg') 
         col4.image(vesh_Pic,caption="Tebogo Sambo", width=150)
         col4.write('UX/UI Designer')
 
-        Phiw_Pic =Image.open('resources/imgs/kago_pic.jpg')
+        Phiw_Pic =Image.open('resources/imgs/resized4.jpeg')
         col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
         col5.write('Digital Marketer')
 
+<<<<<<< HEAD
         nor_Pic =Image.open('resources/imgs/courtney_pic.jpg')
         col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
         col6.write('Database Architect')
@@ -280,6 +281,9 @@ if page_selection == "Company Information":
 >>>>>>> parent of 5e633df (Update edsa_recommender.py)
 =======
 >>>>>>> parent of 5e633df (Update edsa_recommender.py)
+=======
+        
+>>>>>>> parent of 939fe16 (Revert "Update edsa_recommender.py")
 
 #
 
