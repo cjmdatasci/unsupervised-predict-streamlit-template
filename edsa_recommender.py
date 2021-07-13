@@ -64,7 +64,7 @@ def main():
         st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)	
 
     
-        page_options = ["Recommender System","Solution Overview", "Company Information, Background & Team"]
+        page_options = ["Recommender System","Solution Overview", "Company Information"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -122,14 +122,7 @@ def main():
     #Solution Overview Page
     if page_selection == "Solution Overview":
 
-
-        
-###########################################################################################
-################################ Info Page ######################################################
-###########################################################################################
-	 	# Building out the "Company Information, Background & Team" page
-
-    if page_selection == "Company Information, Background & Team":
+    if page_selection == "Company Information":      
         st.title("Company Information, Background and Team")
         st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
 
