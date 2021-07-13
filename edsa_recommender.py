@@ -268,6 +268,9 @@ if page_selection == "Company Information":
         nor_Pic =Image.open('resources/imgs/courtney_pic.jpg')
         col6.image(nor_Pic,caption="Nourhan Alfalous", width=150)
         col6.write('Database Architect')
+<<<<<<< HEAD
+>>>>>>> parent of 5e633df (Update edsa_recommender.py)
+=======
 >>>>>>> parent of 5e633df (Update edsa_recommender.py)
 
 #
