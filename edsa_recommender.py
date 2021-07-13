@@ -127,10 +127,12 @@ def main():
 ###########################################################################################
 ################################ Info Page ######################################################
 ###########################################################################################
-    # Building out the "Company Information, Background & Team" page
+	 	# Building out the "Company Information, Background & Team" page
+
     if page_selection == "Company Information, Background & Team":
-		st.title("Company Information, Background and Team")
-		st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
+        st.title("Company Information, Background and Team")
+        st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
+
         st.header('Our Mission')		
         st.write('To create ethical AI products and leverage the South African market for the 4th indusrtial revolution')
 
