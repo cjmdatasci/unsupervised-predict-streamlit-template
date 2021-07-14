@@ -64,6 +64,7 @@ def main():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         st.markdown(f'<img src="data:image/gif;base64,{data_url},text-align: center;" alt="cat gif">',unsafe_allow_html=True,)
 =======
 =======
@@ -71,6 +72,9 @@ def main():
         st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)	
 
 >>>>>>> parent of 32a949a (Update edsa_recommender.py)
+=======
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
+>>>>>>> parent of 328d425 (Update edsa_recommender.py)
 =======
         st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
 >>>>>>> parent of 328d425 (Update edsa_recommender.py)
