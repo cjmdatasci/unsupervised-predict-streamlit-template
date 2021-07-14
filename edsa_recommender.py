@@ -57,7 +57,7 @@ def main():
     row1_space1, center_, row1_space2 = st.beta_columns((.5, 1, .2, ))
     with center_,_lock :
 
-        file_ = open('resources/imgs/logo.gif', "rb")
+        file_ = open('resources/imgs/Latest_company_logo.gif', "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
@@ -122,75 +122,19 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     #Solution Overview Page
     if page_selection == "Solution Overview":
-        overview_options = ["Problem Statement", "Introduction", "Conclusion"]
-        overview_selection = st.selectbox("Please select an option to get an overview of the project", overview_options)
+        overview_options = ["Select option"]
 
-        if overview_selection == "Problem Statement":
-            st.title('Problem Statement')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
 
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
 
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-
-        if overview_selection == "Introduction":
-            st.title('Introduction')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
-
-            st.markdown(break_h, unsafe_allow_html=True)
-
-            
-
-        if overview_selection == "Conclusion":
-            st.title('Conclusion')
-            break_h = """
-                <br>
-                <br>
-                """
-            st.markdown(break_h, unsafe_allow_html=True)
-            
-            
-            break_h = """
-                <br>
-                <br>
-                <br>
-                """
-
-            st.markdown(break_h, unsafe_allow_html=True)
 
         
 ###########################################################################################
 ################################ Info Page ######################################################
 ###########################################################################################
 	 	# Building out the "Company Information, Background & Team" page
-<<<<<<< HEAD
-=======
 
-    if page_selection == "Company Information, Background & Team":
-        st.title("Company Information, Background and Team")
+    if page_selection == "Company Information":
+        st.title("Company Information")
         st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
 
         st.header('Our Mission')		
@@ -225,11 +169,9 @@ def main():
         Phiw_Pic =Image.open('resources/imgs/resized4.jpeg')
         col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
         col5.write('Digital Marketer')
->>>>>>> parent of a7f0edb (Update edsa_recommender.py)
 
 
 
 #
-        if __name__ == '__main__':
-            main()
-    
+if __name__ == '__main__':
+	main()
