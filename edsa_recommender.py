@@ -57,7 +57,7 @@ def main():
     row1_space1, center_, row1_space2 = st.beta_columns((0.1, 1, 0.25, ))
     with center_,_lock :
 
-        file_ = open('resources/imgs/Latest_company_logo.gif', "rb")
+        file_ = open('resources/imgs/logo.gif', "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
