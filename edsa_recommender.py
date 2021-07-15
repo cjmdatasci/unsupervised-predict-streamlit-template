@@ -54,7 +54,7 @@ def main():
     # you are welcome to add more options to enrich your app.
 
  ### Loading Company logo
-    row1_space1, center_, row1_space2 = st.beta_columns((.5, 1, .2, ))
+    row1_space1, center_, row1_space2 = st.beta_columns((0.1, 1, 0.25, ))
     with center_,_lock :
 
         file_ = open('resources/imgs/Latest_company_logo.gif', "rb")
