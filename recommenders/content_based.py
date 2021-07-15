@@ -84,8 +84,12 @@ def content_model(movie_list,top_n=10):
     # Instantiating and generating the count matrix
     count_vec = CountVectorizer()
     count_matrix = count_vec.fit_transform(data['keyWords'])
+    names = data.copy()
+    names.set_index('movieId',inplace=True)
     indices = pd.Series(data['title'])
     cosine_sim = cosine_similarity(count_matrix, count_matrix)
+    #cosine_sim = pairwise_kernels(count_matrix, metric='cosine', njobs = -1)
+    cosine_sim = pd.DataFrame(cosine_sim, index = data['movieId'].values.astype(int), columns = data['movieId'].values.astype(int))
     # Getting the index of the movie that matches the title
     idx_1 = indices[indices == movie_list[0]].index[0]
     idx_2 = indices[indices == movie_list[1]].index[0]

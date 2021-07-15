@@ -65,7 +65,7 @@ def main():
         st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)	
 
     
-        page_options = ["Recommender System","Solution Overview", "Company Information"]
+        page_options = ["Recommender System","Solution Overview", "Company Information", "Contact Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -169,6 +169,23 @@ def main():
         Phiw_Pic =Image.open('resources/imgs/resized4.jpeg')
         col5.image(Phiw_Pic,caption="Kago Lentlopane", width=150)
         col5.write('Digital Marketer')
+
+#Building out the Contact Page
+    if page_selection == "Contact Us":
+        title = """
+        <div style="background-color:#464e5f00;padding:5px;border-radius:10px;margin:10px;">
+        <h3 style="color:black;text-align:center;">Please enter your contact details and we'll be in touch</h3>
+        """
+        
+        st.markdown(title, unsafe_allow_html=True)
+        firstname = st.text_input("Enter your Name")
+        lastname = st.text_input("Enter your last Name")
+        contactdetails = st.text_input("Enter your Email address")
+        message = st.text_area("Enter your Company information")
+
+        if st.button("Submit"):
+            result = message.title()
+            st.success(result)
 
 
 
