@@ -116,7 +116,6 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
-
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
@@ -152,7 +151,7 @@ def main():
         col1.image(Ric_Pic,caption="Siyamukela Hadebe", width=150)
         col1.write('Data Steward')
 
-        Cot_Pic =Image.open('resources/imgs/resized5.jpg') 
+        Cot_Pic =Image.open('resources/imgs/app_pic.jpg') 
         col2.image(Cot_Pic,caption="Courtney Murugan", width=150)
         col2.write('Project Manager')
 
