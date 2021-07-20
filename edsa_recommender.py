@@ -54,10 +54,10 @@ def main():
     # you are welcome to add more options to enrich your app.
 
  ### Loading Company logo
-    row1_space1, center_, row1_space2 = st.beta_columns((0.1, 1, 0.25, ))
+    row1_space1, center_, row1_space2 = st.beta_columns((0.3, 1, 0.35, ))
     with center_,_lock :
 
-        file_ = open('resources/imgs/logo.gif', "rb")
+        file_ = open('resources/imgs/logo1.gif', "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
@@ -134,7 +134,7 @@ def main():
 
     if page_selection == "Company Information":
         st.title("Company Information")
-        st.info('Discover the mission and vision that keeps us going as well as the amazing team that pulled this project together and how we started.')
+        st.info('Discover what pulled this project together and how we started.')
 
         st.header('Our Mission')		
         st.write('To create ethical AI products and leverage the South African market for the 4th indusrtial revolution')
