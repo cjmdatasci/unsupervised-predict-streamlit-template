@@ -134,7 +134,7 @@ def main():
 
     if page_selection == "Company Information":
         st.title("Company Information")
-        st.info('Discover what pulled this project together and how we started.')
+        st.info('Discover what pulled this project together and how we started')
 
         st.header('Our Mission')		
         st.write('To create ethical AI products and leverage the South African market for the 4th indusrtial revolution')
