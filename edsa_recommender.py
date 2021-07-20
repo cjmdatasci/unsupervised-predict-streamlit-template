@@ -171,10 +171,11 @@ def main():
 
 #Building out the Contact Page
     if page_selection == "Contact Us":
-        title = """
-        <div style="background-color:#464e5f00;padding:5px;border-radius:10px;margin:10px;">
-        <h3 style="color:black;text-align:center;">Please enter your contact details and we'll be in touch</h3>
-        """
+        st.title('Contact us') 
+        st.info('We would love to hear from you')
+        
+        
+        
         
         st.markdown(title, unsafe_allow_html=True)
         firstname = st.text_input("Enter your Name")
@@ -183,7 +184,7 @@ def main():
         message = st.text_area("Enter your Company information")
 
         if st.button("Submit"):
-            result = message.title()
+            result = ('Thanks for being awesome!')
             st.success(result)
 
 
