@@ -172,12 +172,12 @@ def main():
 #Building out the Contact Page
     if page_selection == "Contact Us":
         st.title('Contact us') 
-        st.info('We would love to hear from you')
+        st.info('We would love to hear from you!')
         
         
         
         
-        st.markdown(title, unsafe_allow_html=True)
+        
         firstname = st.text_input("Enter your Name")
         lastname = st.text_input("Enter your last Name")
         contactdetails = st.text_input("Enter your Email address")
