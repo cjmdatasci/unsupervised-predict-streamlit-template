@@ -128,39 +128,37 @@ def main():
     #Solution Overview Page
     if page_selection == "Solution Overview":
         overview_options = ["Select option"]
-        st.title("Solutions Overview")
+        st.title("Solution Overview")
         st.info('For the purpose of this project we have used two amazing techniques for building our movies  recommender App')
         
         col1, col2 = st.beta_columns(2)
         Rec_Pic =Image.open('resources/imgs/Reco.png') 
         col1.image(Rec_Pic,caption="", width=750)
         col1.write('')
-        st.markdown(" __Content-based filtering__ algorithm.")
+        st.markdown(" __Content-based filtering__.")
         
         col3, col4,col5 = st.beta_columns(3)
         Cont =Image.open('resources/imgs/Content.png') 
         col4.image(Cont,caption="", width=200)
         
-        body = 'Content-based Filtering, we seek to make recommendations based on how similar the properties or features of an item are to other items.'
+        body = 'Content-based Filtering, we seek to make recommendations based on how similar the properties or features of a movie are in comparison to other movies, for example suppose we have selected The movie Harry Potter and the Philosophers stone, The movie has a runtime of about 2h39min thus with content based filtering the algorithm may use the feature runtime to compare and find other movies which have a similar movie runtime and thus eventually making a recommendation to the user.'
         st.markdown(body, unsafe_allow_html=False)
         
         ##############################################################
-        st.markdown("__Collaborative-based filtering__ algorithm.")
+        st.markdown("__Collaborative-based filtering__")
         
         col6, col7,col8 = st.beta_columns(3)
         Cont =Image.open('resources/imgs/Collaborative.png') 
         col7.image(Cont,caption="", width=290)
-        body = 'In Collaborative-based filtering, we use the similarity measured between users to make recommendations.'
+        body = 'In Collaborative-based filtering, uses the similarity measured between users to make actually recommendations, meaning if a large community of users have actually rated several movies perhaps with a 5 star rating then the algorithm may use that feature which is movie rating to actually find and recommend similar rated movies to the user provided that atleast a user has rated a particular movie, otherwise this may yield a cold start problem hence with more usage and more ratings a user makes, this will give the model an opportunity to learn more and get better in making better and more accurate recommendations for the user.'
         st.markdown(body, unsafe_allow_html=False)
 
 
         
         
-        """with st.echo():
-            Code = ['1', '2']
-          """  
         
-        video_file = open('resources/imgs/Pres.webm', 'rb')
+        st.title("Play video for a brief walkthrough")
+        video_file = open('resources/imgs/Pres1.webm', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
