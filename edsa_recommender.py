@@ -46,6 +46,12 @@ from recommenders.content_based import content_model
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
 
+#
+st.cache(suppress_st_warning=True,allow_output_mutation=True)
+def subheading(title):
+	html_temp = """<div style="background-color:{};padding:10px;margin-bottom:10px;"><h3 style="color:white;text-align:center;">"""+title+"""</h3></div>"""
+	st.markdown(html_temp, unsafe_allow_html=True)
+
 
 # App declaration
 def main():
@@ -184,20 +190,20 @@ def main():
             result = ('Thanks for being awesome!')
             st.success(result)
 
-if page_selection == "Exploratory Data Analysis":
-		#title_tag("Insights extracted from the data")
-		visual_options = ["The top 15 movies", "Genres with the most number movies", "A count of films by directors"]
-		visual_selection = st.selectbox("Choose Exploratory Data Analaysis Visuas Option", visual_options)
+    if page_selection == "Exploratory Data Analysis":
+            #title_tag("Insights extracted from the data")
+            visual_options = ["The top 15 movies", "Genres with the most number movies", "A count of films by directors"]
+            visual_selection = st.selectbox("Choose Exploratory Data Analaysis Visuas Option", visual_options)
 
-		if visual_selection == "The top 15 movies":
-			subheading('Top 15 movies by number of Ratings')
-			st.image('resources/imgs/top_15_titles.png',use_column_width=True)
-		elif visual_selection == "Genres with the most number movies":
-			subheading('Genres with the most number movies')
-			st.image('resources/imgs/Genres.png',use_column_width=True)
-		elif visual_selection == "A count of films by directors":
-			subheading('A count of films by directors')
-			st.image('resources/imgs/director.png',use_column_width=True)
+            if visual_selection == "The top 15 movies":
+                subheading('Top 15 movies by number of Ratings')
+                st.image('resources/imgs/top_15_titles.png',use_column_width=True)
+            elif visual_selection == "Genres with the most number movies":
+                subheading('Genres with the most number movies')
+                st.image('resources/imgs/Genres.png',use_column_width=True)
+            elif visual_selection == "A count of films by directors":
+                subheading('A count of films by directors')
+                st.image('resources/imgs/director.png',use_column_width=True)
 
 #
 if __name__ == '__main__':
