@@ -228,7 +228,7 @@ def main():
 
             if visual_selection == "The top 10 actors":
                 subheading('Top 15 movies by number of Ratings')
-                st.image('resources/imgs/act.png',use_column_width=True)
+                st.image('resources/imgs/Reco.png',use_column_width=True)
             elif visual_selection == "Genres with the most number movies":
                 subheading('Genres with the most number movies')
                 st.image('resources/imgs/Genres.png',use_column_width=True)
