@@ -141,7 +141,7 @@ def main():
         Cont =Image.open('resources/imgs/Content.png') 
         col4.image(Cont,caption="", width=200)
         
-        body = 'Content-based Filtering, we seek to make recommendations based on how similar the properties or features of a movie are in comparison to other movies, for example suppose we have selected The movie Harry Potter and the Philosophers stone, The movie has a runtime of about 2h39min thus with content based filtering the algorithm may use the feature runtime to compare and find other movies which have a similar movie runtime and thus eventually making a recommendation to the user.'
+        body = 'Content-based filtering uses item features to recommend other items similar to what the user likes, based on their previous actions.'
         st.markdown(body, unsafe_allow_html=False)
         
         ##############################################################
@@ -150,7 +150,7 @@ def main():
         col6, col7,col8 = st.beta_columns(3)
         Cont =Image.open('resources/imgs/Collaborative.png') 
         col7.image(Cont,caption="", width=290)
-        body = 'In Collaborative-based filtering, uses the similarity measured between users to make actually recommendations, meaning if a large community of users have actually rated several movies perhaps with a 5 star rating then the algorithm may use that feature which is movie rating to actually find and recommend similar rated movies to the user provided that atleast a user has rated a particular movie, otherwise this may yield a cold start problem hence with more usage and more ratings a user makes, this will give the model an opportunity to learn more and get better in making better and more accurate recommendations for the user.'
+        body = 'Collaborative filtering uses similarities between users and items simultaneously to provide recommendations.'
         st.markdown(body, unsafe_allow_html=False)
 
 
@@ -228,13 +228,13 @@ def main():
 
             if visual_selection == "The top 10 actors":
                 subheading('Top 15 movies by number of Ratings')
-                st.image('resources/imgs/Reco.png',use_column_width=True)
+                st.image('resources/imgs/act001.JPG',use_column_width=True)
             elif visual_selection == "Genres with the most number movies":
                 subheading('Genres with the most number movies')
-                st.image('resources/imgs/Genres.png',use_column_width=True)
+                st.image('resources/imgs/genre01.JPG',use_column_width=True)
             elif visual_selection == "A count of films by directors":
                 subheading('A count of films by directors')
-                st.image('resources/imgs/directors.png',use_column_width=True)
+                st.image('resources/imgs/directors001.JPG',use_column_width=True)
 
 #
 if __name__ == '__main__':
